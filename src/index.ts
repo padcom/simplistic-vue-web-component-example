@@ -2,7 +2,7 @@ import { defineCustomElement } from 'vue'
 
 import HelloWorldCe from './components/HelloWorld.ce.vue'
 
-class HelloWorld extends defineCustomElement(HelloWorldCe) {
+class HelloWorld extends defineCustomElement(HelloWorldCe, { shadowRootOptions: { delegatesFocus: true } }) {
   // do low-level custom element stuff here
 }
 

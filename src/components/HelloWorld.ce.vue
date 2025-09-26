@@ -1,5 +1,6 @@
 <template>
-  <button class="btn-primary" @click="console.log('Hello!')">
+  <input tabindex="1">
+  <button class="btn-primary" tabindex="2" @click="console.log('Hello!')">
     Hello, world!
   </button>
 </template>
